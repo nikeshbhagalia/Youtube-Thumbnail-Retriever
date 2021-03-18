@@ -15,7 +15,6 @@ namespace Youtube_Thumbnail_Getter
         {
             //var htmlWeb = new HtmlWeb();
             //var document = htmlWeb.Load(BaseUrl.Replace(nameof(ChannelNameOrId), ChannelNameOrId));
-            //var tableRows = document.DocumentNode.SelectNodes(ThumbnailImgTagXpath);
             Console.WriteLine("Hello World!");
 
             IWebDriver driver = new PhantomJSDriver();
