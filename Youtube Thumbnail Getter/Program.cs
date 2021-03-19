@@ -13,7 +13,6 @@ namespace Youtube_Thumbnail_Getter
 
         static async Task Main(string[] args)
         {
-            //var htmlWeb = new HtmlWeb();
             //var document = htmlWeb.Load(BaseUrl.Replace(nameof(ChannelNameOrId), ChannelNameOrId));
             Console.WriteLine("Hello World!");
 
