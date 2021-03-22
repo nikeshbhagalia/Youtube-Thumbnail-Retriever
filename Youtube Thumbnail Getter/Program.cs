@@ -18,7 +18,6 @@ namespace Youtube_Thumbnail_Getter
             IWebDriver driver = new PhantomJSDriver();
             driver.Navigate().GoToUrl("http://www.google.com/");
 
-
             IWebElement query = driver.FindElement(By.Name("q"));
             query.SendKeys("Cheese");
             query.Submit();
