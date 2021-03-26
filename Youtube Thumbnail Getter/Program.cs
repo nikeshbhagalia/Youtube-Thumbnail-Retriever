@@ -25,8 +25,6 @@ namespace Youtube_Thumbnail_Getter
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             wait.Until((d) => { return d.Title.ToLower().StartsWith("cheese"); });
 
-            System.Console.WriteLine("Page title is: " + driver.Title);
-
             driver.Quit();
         }
     }
