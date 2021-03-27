@@ -13,8 +13,6 @@ namespace Youtube_Thumbnail_Getter
 
         static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
             var driver = new PhantomJSDriver();
             driver.Navigate().GoToUrl("http://www.google.com/");
 
