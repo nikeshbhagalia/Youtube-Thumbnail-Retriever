@@ -13,7 +13,7 @@ namespace Youtube_Thumbnail_Getter
         static async Task Main(string[] args)
         {
             var driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("http://www.google.com/");
+            driver.Navigate().GoToUrl(BaseUrl.Replace(nameof(ChannelNameOrId), ChannelNameOrId));
 
             var query = driver.FindElement(By.Name("q"));
             query.SendKeys("Cheese");
