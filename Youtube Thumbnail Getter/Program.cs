@@ -16,7 +16,6 @@ namespace Youtube_Thumbnail_Getter
             driver.Navigate().GoToUrl(BaseUrl.Replace(nameof(ChannelNameOrId), ChannelNameOrId));
 
             var query = driver.FindElement(By.Name("q"));
-            query.SendKeys("Cheese");
             query.Submit();
 
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
