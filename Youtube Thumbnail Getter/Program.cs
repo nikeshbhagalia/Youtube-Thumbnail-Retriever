@@ -19,7 +19,7 @@ namespace Youtube_Thumbnail_Getter
             query.Submit();
 
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            wait.Until((d) => { return d.Title.ToLower().StartsWith("cheese"); });
+            //wait.Until((d) => { return d.Title.ToLower().StartsWith("cheese"); });
 
             driver.Quit();
         }
