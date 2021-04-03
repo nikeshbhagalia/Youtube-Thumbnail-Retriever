@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using System;
-using System.Threading.Tasks;
 
 namespace Youtube_Thumbnail_Getter
 {
