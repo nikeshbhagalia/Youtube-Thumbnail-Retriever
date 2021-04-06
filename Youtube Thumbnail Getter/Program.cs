@@ -15,7 +15,7 @@ namespace Youtube_Thumbnail_Getter
             driver.Navigate().GoToUrl(BaseUrl.Replace(nameof(ChannelNameOrId), ChannelNameOrId));
 
             var query = driver.FindElements(By.Xpath("q"));
-            query.Submit();
+            //query.Submit();
 
             //var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             //wait.Until((d) => { return d.Title.ToLower().StartsWith("cheese"); });
