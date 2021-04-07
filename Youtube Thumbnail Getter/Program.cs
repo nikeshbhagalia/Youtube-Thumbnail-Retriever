@@ -7,7 +7,7 @@ namespace Youtube_Thumbnail_Getter
     {
         private const string BaseUrl = @"https://www.youtube.com/c/ChannelNameOrId/videos";
         private const string ChannelNameOrId = "";
-        private const string ThumbnailImgTagXpath = "//img[contains(@src, 'hqdefault')]";
+        private const string ThumbnailImgTagXpath = @"//img[contains(@src, 'hqdefault')]";
 
         static async Task Main(string[] args)
         {
