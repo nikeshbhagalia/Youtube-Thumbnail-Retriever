@@ -9,7 +9,7 @@ namespace Youtube_Thumbnail_Getter
         private const string ChannelNameOrId = "";
         private const string ThumbnailImgTagXpath = @"//img[contains(@src, 'hqdefault')]";
 
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             var driver = new ChromeDriver();
             driver.Navigate().GoToUrl(BaseUrl.Replace(nameof(ChannelNameOrId), ChannelNameOrId));
