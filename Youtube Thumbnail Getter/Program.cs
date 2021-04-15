@@ -15,7 +15,7 @@ namespace Youtube_Thumbnail_Getter
             var driver = new ChromeDriver();
             driver.Navigate().GoToUrl(BaseUrl.Replace(nameof(ChannelNameOrId), ChannelNameOrId));
 
-            var elements = driver.FindElements(By.XPath(ThumbnailImgTagXpath));
+            var thumbnailElements = driver.FindElements(By.XPath(ThumbnailImgTagXpath));
             //query.Submit();
 
             //var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
