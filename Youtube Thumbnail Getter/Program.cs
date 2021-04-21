@@ -5,14 +5,13 @@ namespace Youtube_Thumbnail_Getter
 {
     class Program
     {
-        private const string BaseUrl = @"https://www.youtube.com/c/ChannelNameOrId/videos";
-        private const string ChannelNameOrId = "";
+        private const string YoutubeChannelVideosUrl = @"https://www.youtube.com/c/ChannelNameOrId/videos";
         private const string ThumbnailImgTagXpath = @"//img[contains(@src, 'hqdefault')]";
 
         static void Main(string[] args)
         {
             var driver = new ChromeDriver();
-            driver.Url = BaseUrl.Replace(nameof(ChannelNameOrId), ChannelNameOrId);
+            driver.Url = YoutubeChannelVideosUrl;
 
             var thumbnailElements = driver.FindElements(By.XPath(ThumbnailImgTagXpath));
 
