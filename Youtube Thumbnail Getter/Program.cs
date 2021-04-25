@@ -22,6 +22,7 @@ namespace Youtube_Thumbnail_Getter
             var chromeOptions = new ChromeOptions();
             chromeOptions.AddArguments("--headless");
             var driver = new ChromeDriver(chromeOptions);
+            
             driver.Url = YoutubeChannelVideosUrl;
 
             var bodyElement = driver.FindElement(By.CssSelector(BodyTagName));
