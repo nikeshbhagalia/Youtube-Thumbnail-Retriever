@@ -49,6 +49,7 @@ namespace Youtube_Thumbnail_Getter
             }
 
             driver.Quit();
+            
             await Task.WhenAll(thumbnailDictionary.Select(thumbnailKvp => Download(thumbnailKvp.Key, thumbnailKvp.Value)));
         }
         
