@@ -14,6 +14,7 @@ namespace Youtube_Thumbnail_Getter
         private const string ThumbnailBaseUrl = @"https://img.youtube.com/vi/videoId/mqdefault.jpg";
         private const string SpinnerTagName = "paper-spinner";
         private const string BodyTagName = "body";
+        private const string HrefAttributeName = "href";
         private const string VideoAnchorTagXpath = @"//a[@id = 'video-title']";
         private const string DestinationPath = @"D:\Thumbnails\";
 
@@ -41,7 +42,7 @@ namespace Youtube_Thumbnail_Getter
             for (var index = 0; index < anchorElements.Count; index++)
             {
                 var anchorElement = anchorElements[index];
-                var href = anchorElement.GetAttribute("href");
+                var href = anchorElement.GetAttribute(HrefAttributeName);
                 var videoId = href.Substring(href.LastIndexOf("v=") + 2);
                 var thumbnailUrl = ThumbnailBaseUrl.Replace(nameof(videoId), videoId);
 
