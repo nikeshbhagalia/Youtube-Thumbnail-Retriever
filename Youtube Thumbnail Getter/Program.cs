@@ -17,11 +17,12 @@ namespace Youtube_Thumbnail_Getter
         private const string HrefAttributeName = "href";
         private const string VideoAnchorTagXpath = @"//a[@id = 'video-title']";
         private const string DestinationPath = @"D:\Thumbnails\";
+        private const string HeadlessArgument = "--headless";
 
         static void Main(string[] args)
         {
             var chromeOptions = new ChromeOptions();
-            chromeOptions.AddArguments("--headless");
+            chromeOptions.AddArguments(HeadlessArgument);
             var driver = new ChromeDriver(chromeOptions);
             
             driver.Url = YoutubeChannelVideosUrl;
