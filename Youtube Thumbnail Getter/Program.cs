@@ -18,6 +18,8 @@ namespace Youtube_Thumbnail_Getter
         private const string VideoAnchorTagXpath = @"//a[@id = 'video-title']";
         private const string DestinationPath = @"D:\Thumbnails\";
         private const string HeadlessArgument = "--headless";
+        
+        private IWebElement _bodyElement;
 
         static void Main(string[] args)
         {
@@ -27,13 +29,12 @@ namespace Youtube_Thumbnail_Getter
             
             driver.Url = YoutubeChannelVideosUrl;
 
-            var bodyElement = driver.FindElement(By.CssSelector(BodyTagName));
-            bodyElement.SendKeys(Keys.Control + Keys.End);
+            ScrollDown();
             
             var spinnerElements = FindSpinnerElements(driver);
             while (spinnerElements.Count != 0)
             {
-                bodyElement.SendKeys(Keys.Control + Keys.End);
+                ScrollDown();
                 spinnerElements = FindSpinnerElements(driver);
             }
 
@@ -65,5 +66,8 @@ namespace Youtube_Thumbnail_Getter
                 await webClient.DownloadFileTaskAsync(new Uri(thumbnailUrl), $"{DestinationPath}{number}.jpg");
             }
         }
+        
+        private static void ScrollDown() =>
+            _bodyElement.SendKeys(Keys.Control + Keys.End);
     }
 }
