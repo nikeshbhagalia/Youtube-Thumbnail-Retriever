@@ -18,6 +18,7 @@ namespace Youtube_Thumbnail_Getter
         private const string VideoAnchorTagXpath = @"//a[@id = 'video-title']";
         private const string DestinationPath = @"D:\Thumbnails\";
         private const string HeadlessArgument = "--headless";
+        private const string VideoIdPrefix = "v=";
         
         private IWebElement _bodyElement;
 
@@ -45,7 +46,7 @@ namespace Youtube_Thumbnail_Getter
             {
                 var anchorElement = anchorElements[index];
                 var href = anchorElement.GetAttribute(HrefAttributeName);
-                var videoId = href.Substring(href.LastIndexOf("v=") + 2);
+                var videoId = href.Substring(href.LastIndexOf(VideoIdPrefix) + 2);
                 var thumbnailUrl = ThumbnailBaseUrl.Replace(nameof(videoId), videoId);
 
                 thumbnailDictionary.Add(index + 1, thumbnailUrl);
