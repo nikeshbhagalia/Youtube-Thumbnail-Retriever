@@ -20,7 +20,7 @@ namespace Youtube_Thumbnail_Getter
         private const string HeadlessArgument = "--headless";
         private const string VideoIdPrefix = "v=";
         
-        private IWebElement _bodyElement;
+        private readonly IWebElement _bodyElement;
 
         static void Main(string[] args)
         {
