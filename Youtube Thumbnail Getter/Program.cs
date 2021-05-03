@@ -21,7 +21,7 @@ namespace Youtube_Thumbnail_Getter
         private const string VideoIdPrefix = "v=";
         
         private readonly IWebElement _bodyElement;
-        private IWebDriver _driver;
+        private readonly IWebDriver _driver;
 
         static void Main(string[] args)
         {
