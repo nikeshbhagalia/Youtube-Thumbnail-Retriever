@@ -33,11 +33,11 @@ namespace Youtube_Thumbnail_Getter
 
             ScrollDown();
             
-            var spinnerElements = FindSpinnerElements(_driver);
+            var spinnerElements = FindSpinnerElements();
             while (spinnerElements.Count != 0)
             {
                 ScrollDown();
-                spinnerElements = FindSpinnerElements(_driver);
+                spinnerElements = FindSpinnerElements();
             }
 
             var anchorElements = _driver.FindElements(By.XPath(VideoAnchorTagXpath));
@@ -58,8 +58,8 @@ namespace Youtube_Thumbnail_Getter
             await Task.WhenAll(thumbnailDictionary.Select(thumbnailKvp => Download(thumbnailKvp.Key, thumbnailKvp.Value)));
         }
         
-        private static ReadOnlyCollection<IWebElement> FindSpinnerElements(IWebDriver driver) =>
-            driver.FindElements(By.TagName(SpinnerTagName));
+        private static ReadOnlyCollection<IWebElement> FindSpinnerElements() =>
+            _driver.FindElements(By.TagName(SpinnerTagName));
 
         private static async Task Download(int number, string thumbnailUrl)
         {
