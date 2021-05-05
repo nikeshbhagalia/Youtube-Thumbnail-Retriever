@@ -34,7 +34,7 @@ namespace Youtube_Thumbnail_Getter
             ScrollDown();
             
             var spinnerElements = FindSpinnerElements();
-            while (spinnerElements.Count != 0)
+            while (spinnerElements.Count < 0)
             {
                 ScrollDown();
                 spinnerElements = FindSpinnerElements();
