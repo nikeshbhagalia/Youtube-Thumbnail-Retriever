@@ -21,15 +21,15 @@ namespace Youtube_Thumbnail_Getter
         private const string VideoIdPrefix = "v=";
         
         private readonly IWebElement _bodyElement;
-        private readonly IWebDriver _driver;
+        private readonly IWebDriver _webDriver;
 
         static void Main(string[] args)
         {
             var chromeOptions = new ChromeOptions();
             chromeOptions.AddArguments(HeadlessArgument);
-            _driver = new ChromeDriver(chromeOptions);
+            _webDriver = new ChromeDriver(chromeOptions);
             
-            _driver.Url = YoutubeChannelVideosUrl;
+            _webDriver.Url = YoutubeChannelVideosUrl;
 
             ScrollDown();
             
@@ -40,7 +40,7 @@ namespace Youtube_Thumbnail_Getter
                 spinnerElements = FindSpinnerElements();
             }
 
-            var anchorElements = _driver.FindElements(By.XPath(VideoAnchorTagXpath));
+            var anchorElements = _webDriver.FindElements(By.XPath(VideoAnchorTagXpath));
             var thumbnailDictionary = new Dictionary<int, string>();
 
             for (var index = 0; index < anchorElements.Count; index++)
@@ -59,7 +59,7 @@ namespace Youtube_Thumbnail_Getter
         }
         
         private static ReadOnlyCollection<IWebElement> FindSpinnerElements() =>
-            _driver.FindElements(By.TagName(SpinnerTagName));
+            _webDriver.FindElements(By.TagName(SpinnerTagName));
 
         private static async Task Download(int number, string thumbnailUrl)
         {
