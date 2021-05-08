@@ -25,7 +25,7 @@ namespace Youtube_Thumbnail_Getter
 
         static void Main(string[] args)
         {
-            var chromeOptions = new ChromeOptions();
+            var chromeOptions = new ChromeOptions();//to do: use portable chrome
             chromeOptions.AddArguments(HeadlessArgument);
             _webDriver = new ChromeDriver(chromeOptions);
             
