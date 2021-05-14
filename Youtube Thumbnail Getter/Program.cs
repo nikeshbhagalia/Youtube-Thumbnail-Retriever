@@ -47,7 +47,7 @@ namespace Youtube_Thumbnail_Getter
             {
                 var anchorElement = anchorElements[index];
                 var href = anchorElement.GetAttribute(HrefAttributeName);
-                var videoId = href.Substring(href.LastIndexOf(VideoIdPrefix) + 2);
+                var videoId = href.Substring(href.LastIndexOf(VideoIdPrefix) + VideoIdPrefix.Length);
                 var thumbnailUrl = ThumbnailBaseUrl.Replace(nameof(videoId), videoId);
 
                 thumbnailDictionary.Add(index + 1, thumbnailUrl);
