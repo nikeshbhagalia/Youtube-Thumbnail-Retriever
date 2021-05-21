@@ -23,7 +23,7 @@ namespace Youtube_Thumbnail_Getter
         private readonly IWebElement _bodyElement;
         private readonly IWebDriver _webDriver;
 
-        static void Main(string[] args)
+        static void Main(string[] args)//to do: convert to unit test
         {
             var chromeOptions = new ChromeOptions();//to do: use portable chrome
             chromeOptions.AddArguments(HeadlessArgument);
