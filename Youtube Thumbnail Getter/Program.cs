@@ -32,7 +32,6 @@ namespace Youtube_Thumbnail_Getter
             _webDriver.Url = YoutubeChannelVideosUrl;
 
             ScrollDown();
-            
             var spinnerElements = FindSpinnerElements();
             while (spinnerElements.Count < 0)
             {
