@@ -10,7 +10,7 @@ namespace Youtube_Thumbnail_Getter
 {
     class Program
     {
-        private const string YoutubeChannelVideosUrl = @"https://www.youtube.com/user/YouTube/videos";//add into appsettings
+        private const string YoutubeChannelVideosUrl = @"https://www.youtube.com/user/YouTube/videos";//to do: add into appsettings
         private const string ThumbnailBaseUrl = @"https://img.youtube.com/vi/videoId/mqdefault.jpg";
         private const string SpinnerTagName = "paper-spinner";
         private const string BodyTagName = "body";
