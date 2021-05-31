@@ -16,7 +16,7 @@ namespace Youtube_Thumbnail_Getter
         private const string BodyTagName = "body";
         private const string HrefAttributeName = "href";
         private const string VideoAnchorTagXpath = @"//a[@id = 'video-title']";
-        private const string DestinationPath = @"D:\Thumbnails\";//to do: make into appsettings
+        private const string DestinationPath = @"D:\Thumbnails\";//to do: add into appsettings
         private const string HeadlessArgument = "--headless";
         private const string VideoIdPrefix = "v=";
         
