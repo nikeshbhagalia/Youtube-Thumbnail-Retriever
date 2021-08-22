@@ -1,4 +1,4 @@
-# Youtube Thumbnail Retriever Console App
+# Youtube Thumbnail Retriever Console Application
 
 Retrieve all thumbnails for a Youtube channel
 
