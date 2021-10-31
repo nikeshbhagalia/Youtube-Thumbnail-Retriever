@@ -7,3 +7,4 @@ Retrieve all thumbnail images for all videos in a Youtube channel.
 3. Run the console application.
 
 To do: Convert into unit test
+To do: use portable chrome
