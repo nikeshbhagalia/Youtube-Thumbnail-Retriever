@@ -8,4 +8,4 @@ Retrieve all thumbnail images for all videos in a Youtube channel.
 
 To do: Convert into unit test.
 
-To do: Implement portable version of Chrome
+To do: Implement portable version of Chrome.
