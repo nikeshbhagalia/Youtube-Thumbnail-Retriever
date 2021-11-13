@@ -7,5 +7,4 @@ Retrieve all thumbnail images for all videos in a Youtube channel.
 3. Run the console application.
 
 To do: Implement portable version of Google Chrome with Selenium.
-
 To do: Convert into unit test.
