@@ -6,5 +6,5 @@ Retrieve all thumbnail images for all videos in a Youtube channel.
 2. Change the constant 'DestinationPath' to where you want to save the thumbnails on your PC.
 3. Run the console application.
 
-To do: Implement portable version of Google Chrome with Selenium.
 To do: Convert into unit test.
+To do: Implement portable version of Google Chrome with Selenium.
