@@ -8,4 +8,4 @@ Retrieve all thumbnail images for all videos in a Youtube channel.
 
 To do: Convert into unit test.
 
-To do: Implement google chrome portable with Selenium.
+To do: Implement Google chrome portable with Selenium.
