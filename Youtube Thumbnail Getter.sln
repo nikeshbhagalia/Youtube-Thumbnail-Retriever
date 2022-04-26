@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Youtube Thumbnail Getter", "Youtube Thumbnail Getter\Youtube Thumbnail Getter.csproj", "{3A1C2069-97A8-4BAC-ACC0-55F95474E43A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetYoutubeThumbnail.Tests", "GetYoutubeThumbnail.Tests\GetYoutubeThumbnail.Tests.csproj", "{BE344FBD-A2D6-40CF-A159-5D870D8A03FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Youtube Thumbnail Getter", "Youtube Thumbnail Getter\Youtube Thumbnail Getter.csproj", "{4215F18C-58E3-4917-BC45-6B1104DFE8AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3A1C2069-97A8-4BAC-ACC0-55F95474E43A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A1C2069-97A8-4BAC-ACC0-55F95474E43A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A1C2069-97A8-4BAC-ACC0-55F95474E43A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A1C2069-97A8-4BAC-ACC0-55F95474E43A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE344FBD-A2D6-40CF-A159-5D870D8A03FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE344FBD-A2D6-40CF-A159-5D870D8A03FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE344FBD-A2D6-40CF-A159-5D870D8A03FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE344FBD-A2D6-40CF-A159-5D870D8A03FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4215F18C-58E3-4917-BC45-6B1104DFE8AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4215F18C-58E3-4917-BC45-6B1104DFE8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4215F18C-58E3-4917-BC45-6B1104DFE8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4215F18C-58E3-4917-BC45-6B1104DFE8AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
