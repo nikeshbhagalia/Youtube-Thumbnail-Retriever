@@ -4,6 +4,7 @@
     {
         Post,
         Put,
-        Get
+        Get,
+        Options
     }
 }
