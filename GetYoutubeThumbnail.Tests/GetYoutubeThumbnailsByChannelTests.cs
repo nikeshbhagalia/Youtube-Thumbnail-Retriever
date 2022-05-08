@@ -43,7 +43,6 @@ namespace GetYoutubeThumbnail.Tests
             _driver.Quit();
         }
 
-        //[TestCase(@"https://www.youtube.com/c/Sidemen/videos?view=0&sort=da&flow=grid")]
         [TestCase(@"https://www.youtube.com/zerkaa/videos?view=0&sort=da&flow=grid")]
         public async Task GetThumbnails(string youtubeChannelVideosUrl)
         {
