@@ -17,6 +17,7 @@ namespace GetYoutubeThumbnail.Tests
     public class GetYoutubeThumbnailsByChannelTests
     {
         private const string ThumbnailBaseUrl = @"https://img.youtube.com/vi/videoId/mqdefault.jpg";
+        private const string ShortsBaseUrl = @"https://www.youtube.com/shorts/";
         private const string BodyTagName = "body";
         private const string VideoAnchorTagXpath = @"//a[@id = 'video-title']";
         private const string DestinationPath = @"D:\Thumbnails\";
