@@ -155,5 +155,13 @@ namespace GetYoutubeThumbnail.Tests
                 }
             }
         }
+        
+        private string GetVideoId(string url)
+        {
+            var key = url.StartsWith(ShortsBaseUrl, StringComparison.OrdinalIgnoreCase)
+                ? ShortsBaseUrl
+                : "v=";
+            return url.Substring(url.LastIndexOf(key) + key.Length);
+        }
     }
 }
