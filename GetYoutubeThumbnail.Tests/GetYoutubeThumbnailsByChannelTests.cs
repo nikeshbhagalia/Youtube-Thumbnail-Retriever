@@ -65,7 +65,7 @@ namespace GetYoutubeThumbnail.Tests
             {
                 var anchorElement = anchorElements[index];
                 var href = anchorElement.GetAttribute("href");
-                var videoId = href.Substring(href.LastIndexOf("v=") + 2);
+                var videoId = GetVideoId(href);
                 var thumbnailUrl = ThumbnailBaseUrl.Replace(nameof(videoId), videoId);
 
                 index++;
